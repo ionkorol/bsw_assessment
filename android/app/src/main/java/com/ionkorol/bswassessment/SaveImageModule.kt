@@ -1,13 +1,18 @@
-package com.yourpackage.saveimagemodule
+package com.ionkorol.bswassessment
 
-import android.content.ContentValues
-import android.content.Context
-import android.provider.MediaStore
-import androidx.core.content.ContextCompat
-import com.facebook.react.bridge.*
-import java.io.ByteArrayOutputStream
-import java.io.IOException
 import java.util.*
+import java.io.IOException
+import android.content.Context
+import android.content.ContentValues
+import android.provider.MediaStore
+import android.util.Base64
+
+import com.facebook.react.bridge.Promise
+import com.facebook.react.bridge.NativeModule
+import com.facebook.react.bridge.ReactApplicationContext
+import com.facebook.react.bridge.ReactContext
+import com.facebook.react.bridge.ReactContextBaseJavaModule
+import com.facebook.react.bridge.ReactMethod
 
 class SaveImageModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
 
